@@ -11,7 +11,7 @@ export const metadata = {
     default:"Micyio Solutions",
     template:"%s | Micyio"
   },
-  description: "Innovate your digital future with Micyio Solutions. Experience cutting-edge tech solutions for a transformative journey.",
+  description: "Innovate your digital future with Micyio Solutions. Experience cutting-edge tech solutions for a transformative journey. #MicyioInnovates #TechExcellence",
 };
 
 export default function RootLayout({ children }) {
