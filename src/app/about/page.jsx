@@ -18,7 +18,7 @@ const AboutPage = () => {
         Innovating Today for Tomorrow: Micyio Solutions.
         </h1>
         <p className={styles.desc}>
-        Welcome to Micyio Solutions — your gateway to innovation and digital transformation. Explore a world where tech excellence meets simplicity. Join us on the journey to shape tomorrow's digital landscape.
+       {` Welcome to Micyio Solutions — your gateway to innovation and digital transformation. Explore a world where tech excellence meets simplicity. Join us on the journey to shape tomorrow's digital landscape.`}
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
