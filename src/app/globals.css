@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-lato dark:bg-[#030303];
+}
+
+.heading-one {
+  @apply font-sans text-7xl font-bold leading-[100px];
+}
+.heading-two {
+  @apply font-sans text-[56px] font-bold;
+}
+.heading-three {
+  @apply font-sans text-4xl font-bold;
+}
+.heading-four {
+  @apply font-sans text-[28px] font-bold;
+}
+
+.menu-text {
+  @apply font-lato text-lg font-normal;
+}
+
+.button-outline {
+  @apply h-12 rounded-[24px] border border-primary px-[20px] py-2 font-lato text-lg font-semibold text-primary;
+}
+
+.button-primary {
+  @apply h-12 rounded-[24px]  bg-gradient-to-r from-primary to-deepOrange py-2 pl-[20px] pr-1.5 font-lato text-lg font-semibold text-white;
+}
