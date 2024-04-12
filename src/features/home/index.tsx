@@ -5,6 +5,7 @@ export * from "./faq";
 export * from "./hero";
 export * from "./marquee";
 export * from "./portfolio";
+export * from "./pricing";
 export * from "./services";
 export * from "./technology";
 export * from "./testimonials";
