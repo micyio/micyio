@@ -1,11 +1,11 @@
-import { Hero } from "@/features/home";
+import { Clients, Hero } from "@/features/home";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-[200px]">
+    <main className="flex flex-col gap-[100px] lg:gap-[200px]">
       <Hero />
-      {/* <Clients />
-      <AboutSection />
+      <Clients />
+      {/* <AboutSection />
       <ServiceSection />
       <PortfolioSection />
       <MarqueeSection />
