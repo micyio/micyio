@@ -5,6 +5,7 @@ import {
   Hero,
   MarqueeSection,
   PortfolioSection,
+  Pricing,
   ServiceSection,
   TechnologySection,
   TestimonialsSection,
@@ -22,8 +23,8 @@ export default function Home() {
       <TestimonialsSection />
       <TechnologySection />
       <FaqSection />
-      {/*<Pricing />
-      <CTA /> */}
+      <Pricing />
+      {/*<CTA /> */}
     </main>
   );
 }

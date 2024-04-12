@@ -4,11 +4,11 @@ import { pricingData } from "./data";
 
 export function PricingCard() {
   return (
-    <div className="grid h-[930px] grid-cols-3 gap-3 ">
+    <div className="grid min-h-[930px] gap-3 md:grid-cols-2 lg:grid-cols-3 ">
       {pricingData?.map((price) => (
         <div
           key={price?.id}
-          className="relative flex flex-col justify-between overflow-hidden rounded-3xl border  bg-white p-10 shadow-md hover:border-primary dark:border-[#141313]  dark:bg-[#030303] dark:hover:border-primary"
+          className="relative flex flex-col justify-between gap-4 overflow-hidden rounded-3xl border  bg-white p-10 shadow-md hover:border-primary dark:border-[#141313]  dark:bg-[#030303] dark:hover:border-primary"
         >
           <div className="dark:bg flex flex-col gap-5">
             {price?.isPopular ? (
@@ -36,7 +36,7 @@ export function PricingCard() {
             </ul>
           </div>
           <div>
-            <Button variant="dynamic" className="group flex pr-2">
+            <Button variant="dynamic" className="group flex items-center pr-2">
               {price?.buttonTitle}{" "}
               <span className=" ml-5 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-black group-hover:bg-white">
                 <GoArrowUpRight />
