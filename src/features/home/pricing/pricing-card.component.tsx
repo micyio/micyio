@@ -8,12 +8,18 @@ export function PricingCard() {
       {pricingData?.map((price) => (
         <div
           key={price?.id}
-          className="flex flex-col justify-between rounded-3xl border  bg-white p-10 shadow-md hover:border-primary dark:border-[#141313]  dark:bg-[#030303] dark:hover:border-primary"
+          className="relative flex flex-col justify-between overflow-hidden rounded-3xl border  bg-white p-10 shadow-md hover:border-primary dark:border-[#141313]  dark:bg-[#030303] dark:hover:border-primary"
         >
           <div className="dark:bg flex flex-col gap-5">
+            {price?.isPopular ? (
+              <span className="absolute -right-[30px] top-[18px] flex h-10 w-[180px] rotate-[37deg] items-center justify-center bg-primary  text-lg font-semibold uppercase text-black">
+                {price?.popularText}
+              </span>
+            ) : null}
             <div className="flex h-12 w-[120px] items-center justify-center rounded-3xl border border-[#B0B0B0] bg-[#F6F6F6]  dark:bg-[#141313]">
               {price?.name}
             </div>
+
             <p>
               {price?.pricePrefix}
               <span className="font-lato text-[56px] font-bold text-primary">
