@@ -3,7 +3,10 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export function CTA() {
   return (
-    <div className="container flex items-center gap-[80px] rounded-3xl border bg-[#F6F6F633] py-[50px] pl-[130px] pr-[150px] dark:border-[#3D3D3D] dark:bg-[#141313]">
+    <div
+      className="container flex items-center gap-[80px] rounded-3xl border bg-[#F6F6F633] py-[50px] pl-[130px] pr-[150px] dark:border-[#3D3D3D] dark:bg-[#141313]"
+      id="contact"
+    >
       <Image
         src="/images/cta/one.png"
         alt=""

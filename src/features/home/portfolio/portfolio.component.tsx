@@ -1,67 +1,9 @@
 "use client";
+
 import { Button } from "@/features/ui";
 import { useState } from "react";
+import { categoryList, sliderImage } from "./data";
 import { PortfolioSlider } from "./portfolio-slider.component";
-import { TSlider } from "./type";
-
-const sliderImage: TSlider[] = [
-  {
-    id: 1,
-    url: "/images/portfolio/one.png",
-    alt: "one",
-    category: ["ui/ux", "web"],
-    link: "#",
-    btnText: "View Case Study",
-    title: "Project One",
-  },
-  {
-    id: 2,
-    url: "/images/portfolio/two.png",
-    alt: "two",
-    category: ["ui/ux", "web"],
-    link: "#",
-    btnText: "View Case Study",
-    title: "Project Two",
-  },
-  {
-    id: 3,
-    url: "/images/portfolio/three.png",
-    alt: "three",
-    category: ["ui/ux", "web"],
-    link: "#",
-    btnText: "View",
-    title: "Project Three",
-  },
-  {
-    id: 4,
-    url: "/images/portfolio/two.png",
-    alt: "four",
-    category: ["app"],
-    link: "#",
-    btnText: "View",
-    title: "Project Four",
-  },
-  {
-    id: 5,
-    url: "/images/portfolio/one.png",
-    alt: "five",
-    category: ["app"],
-    link: "#",
-    btnText: "View",
-    title: "Project Five",
-  },
-  {
-    id: 6,
-    url: "/images/portfolio/three.png",
-    alt: "six",
-    category: ["ui/ux", "app"],
-    link: "#",
-    btnText: "View",
-    title: "Project Six",
-  },
-];
-
-const categoryList = ["all", "app", "ui/ux", "web"];
 
 export function PortfolioSection() {
   const [activeTab, setActiveTab] = useState<string>("all");
@@ -71,7 +13,7 @@ export function PortfolioSection() {
   );
 
   return (
-    <div className="container">
+    <div className="container" id="portfolio">
       <div className="grid grid-cols-12 ">
         <div className="col-span-8">
           <h1 className="heading-two mb-5">

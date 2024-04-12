@@ -3,7 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export function AboutSection() {
   return (
-    <div className="container">
+    <div className="container" id="about">
       <div className="grid grid-cols-12">
         <div className="col-span-6">
           <Image
