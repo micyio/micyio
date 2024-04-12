@@ -17,7 +17,7 @@ export function ServiceSection() {
 
   return (
     <div
-      className="rounded-t-[100px] bg-[#F6F6F680] py-[100px] dark:bg-[#141313]"
+      className="rounded-t-[50px] bg-[#F6F6F680] py-[100px] dark:bg-[#141313] lg:rounded-t-[100px]"
       id="service"
     >
       <div className="container">

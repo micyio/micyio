@@ -2,7 +2,7 @@ import { PricingCard } from "./pricing-card.component";
 
 export function Pricing() {
   return (
-    <div className="rounded-t-[100px] bg-[#F6F6F680] py-[100px] dark:bg-[#141313]">
+    <div className="rounded-t-[50px] bg-[#F6F6F680] py-[100px] dark:bg-[#141313] lg:rounded-t-[100px]">
       <div className="container">
         <div className="grid grid-cols-12 ">
           <div className="col-span-12 text-center lg:col-span-8 lg:text-left">
