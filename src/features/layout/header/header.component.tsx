@@ -1,6 +1,6 @@
 import { Button } from "./button.component";
 import { Logo } from "./logo.component";
-import { Menu } from "./menu.component";
+import { Menu, ResponsiveMenu } from "./menu.component";
 
 export function Header() {
   return (
@@ -8,8 +8,16 @@ export function Header() {
       <div className="container relative" id="home">
         <div className="mt-[10px] flex items-center justify-between">
           <Logo />
-          <Menu />
-          <Button />
+          <div className="hidden lg:block">
+            <Menu />
+          </div>
+          <div className="hidden lg:block">
+            <Button />
+          </div>
+          <div className="flex items-center gap-5 lg:hidden">
+            <Button />
+            <ResponsiveMenu />
+          </div>
         </div>
       </div>
     </div>

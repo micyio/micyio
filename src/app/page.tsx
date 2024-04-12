@@ -1,22 +1,10 @@
-import {
-  AboutSection,
-  Clients,
-  CTA,
-  FaqSection,
-  Hero,
-  MarqueeSection,
-  PortfolioSection,
-  Pricing,
-  ServiceSection,
-  TechnologySection,
-  TestimonialsSection,
-} from "@/features/home";
+import { Hero } from "@/features/home";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-[200px]">
       <Hero />
-      <Clients />
+      {/* <Clients />
       <AboutSection />
       <ServiceSection />
       <PortfolioSection />
@@ -25,7 +13,7 @@ export default function Home() {
       <TechnologySection />
       <FaqSection />
       <Pricing />
-      <CTA />
+      <CTA /> */}
     </main>
   );
 }

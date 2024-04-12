@@ -20,11 +20,11 @@ body {
 }
 
 .menu-text {
-  @apply font-lato text-lg font-normal;
+  @apply font-lato text-base font-normal lg:text-lg;
 }
 
 .button-outline {
-  @apply h-12 rounded-[24px] border border-primary px-[20px] py-2 font-lato text-lg font-semibold text-primary;
+  @apply flex h-10 items-center justify-center rounded-[24px] border border-primary px-[20px] py-2 font-lato text-sm font-medium text-primary md:text-base lg:text-lg xl:h-12 xl:font-semibold;
 }
 
 .button-primary {
