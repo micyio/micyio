@@ -14,7 +14,7 @@ export function Clients() {
           modules={[A11y, Autoplay]}
           spaceBetween={50}
           loop={true}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 1000 }}
           breakpoints={{
             0: {
               slidesPerView: 3,
