@@ -39,19 +39,19 @@ export function ServiceSection() {
             <div
               onMouseOver={() => setActive(index)}
               key={service.id}
-              className={`${active === index ? "bg-gradient-to-b text-white" : ""} group col-span-4 rounded-l-lg rounded-t-lg from-primary to-deepOrange p-5  transition-all hover:bg-gradient-to-b hover:text-white`}
+              className={`${active === index ? "bg-gradient-to-b text-white" : ""} group col-span-12 rounded-l-lg rounded-t-lg from-primary to-deepOrange p-5 transition-all  hover:bg-gradient-to-b hover:text-white sm:col-span-6  lg:col-span-4`}
             >
               <div>
-                <p className=" border-b border-gray-100 pb-3 font-sans text-[26px] font-bold">
+                <p className="flex border-b border-gray-100 pb-3 font-sans font-bold lg:text-base xl:text-[26px]">
                   <div
-                    className={`${active === index ? " text-white" : ""} mr-7 inline-block text-primary group-hover:text-white`}
+                    className={`${active === index ? " text-white" : ""} mr-3 inline-block text-primary group-hover:text-white xl:mr-7`}
                   >
                     {service.icon}
                   </div>
                   {service.title}
                 </p>
               </div>
-              <p className="ml-14 mt-3 text-justify">{service.description}</p>
+              <p className="mt-3 xl:ml-14 ">{service.description}</p>
             </div>
           ))}
         </div>

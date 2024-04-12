@@ -1,4 +1,4 @@
-import { AboutSection, Clients, Hero } from "@/features/home";
+import { AboutSection, Clients, Hero, ServiceSection } from "@/features/home";
 
 export default function Home() {
   return (
@@ -6,8 +6,8 @@ export default function Home() {
       <Hero />
       <Clients />
       <AboutSection />
-      {/* <ServiceSection />
-      <PortfolioSection />
+      <ServiceSection />
+      {/* <PortfolioSection />
       <MarqueeSection />
       <TestimonialsSection />
       <TechnologySection />
