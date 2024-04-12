@@ -1,6 +1,5 @@
-import { ThemeProvider } from "@/context/theme-provider";
-import { ThemeSwitcher } from "@/context/theme-toggle.component";
 import { FooterSection, Header } from "@/features";
+import { ThemeProvider } from "@/features/theme-switch/theme-provider";
 import type { Metadata } from "next";
 import { Lato, Raleway } from "next/font/google";
 import "./globals.css";
@@ -32,7 +31,6 @@ export default function RootLayout({
     <html lang="en" className={`${raleway.variable} ${lato.variable}`}>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ThemeSwitcher />
           <Header />
           <main>{children}</main>
           <FooterSection />

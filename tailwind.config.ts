@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     container: {
       center: true,
+      padding: "15px",
     },
     screens: {
       sm: "640px",

@@ -6,6 +6,7 @@ import {
   Hero,
   MarqueeSection,
   PortfolioSection,
+  Pricing,
   ServiceSection,
   TechnologySection,
   TestimonialsSection,
@@ -13,7 +14,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-[200px]">
+    <main className="flex flex-col gap-[100px] lg:gap-[200px]">
       <Hero />
       <Clients />
       <AboutSection />
@@ -23,6 +24,7 @@ export default function Home() {
       <TestimonialsSection />
       <TechnologySection />
       <FaqSection />
+      <Pricing />
       <CTA />
     </main>
   );

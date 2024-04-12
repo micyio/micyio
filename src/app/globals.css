@@ -7,10 +7,10 @@ body {
 }
 
 .heading-one {
-  @apply font-sans text-7xl font-bold leading-[100px];
+  @apply font-sans text-4xl font-bold leading-10 sm:text-5xl sm:leading-[70px] lg:text-7xl lg:leading-[100px];
 }
 .heading-two {
-  @apply font-sans text-[56px] font-bold;
+  @apply font-sans text-4xl font-bold leading-[54px] lg:text-5xl lg:leading-[72px] xl:text-[56px] xl:leading-[84px];
 }
 .heading-three {
   @apply font-sans text-4xl font-bold;
@@ -20,13 +20,13 @@ body {
 }
 
 .menu-text {
-  @apply font-lato text-lg font-normal;
+  @apply font-lato text-base font-normal lg:text-lg;
 }
 
 .button-outline {
-  @apply h-12 rounded-[24px] border border-primary px-[20px] py-2 font-lato text-lg font-semibold text-primary;
+  @apply flex h-10 items-center justify-center rounded-[24px] border border-primary px-[20px] py-2 font-lato text-sm font-medium text-primary md:text-base lg:text-lg xl:h-12 xl:font-semibold;
 }
 
 .button-primary {
-  @apply h-12 rounded-[24px]  bg-gradient-to-r from-primary to-deepOrange py-2 pl-[20px] pr-1.5 font-lato text-lg font-semibold text-white;
+  @apply h-10 rounded-[24px] bg-gradient-to-r  from-primary to-deepOrange py-2 pl-[20px] pr-1.5 font-lato text-sm font-medium text-white md:text-base lg:text-lg xl:h-12 xl:font-semibold;
 }

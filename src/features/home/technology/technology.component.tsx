@@ -5,7 +5,7 @@ export function TechnologySection() {
     <div className="rounded-t-[100px] bg-[#F6F6F680] py-[100px] dark:bg-[#141313]">
       <div className="container">
         <div className="grid grid-cols-12 ">
-          <div className="col-span-8">
+          <div className="col-span-12 text-center lg:col-span-8 lg:text-left">
             <h1 className="heading-two mb-5">
               Tools & <span className="text-primary">Technologies</span>
             </h1>
