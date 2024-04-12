@@ -20,24 +20,24 @@ export function TestimonialSlider() {
     >
       {testimonialData?.map((testimonial, index) => (
         <SwiperSlide key={index}>
-          <div className="grid grid-cols-12 gap-10">
-            <div className="col-span-2"></div>
-            <div className="col-span-3">
+          <div className="grid grid-cols-12 sm:gap-10">
+            <div className="col-span-12 xl:col-span-2" />
+            <div className="col-span-12 sm:col-span-6 xl:col-span-3">
               <Image
                 src={testimonial?.thumbnail}
                 alt={testimonial?.author}
                 height={350}
                 width={350}
-                className="h-[350px] w-[350px] rounded-lg object-cover"
+                className="h-[350px] w-[480px] rounded-lg object-cover sm:w-[350px]"
               />
             </div>
-            <div className="col-span-5 flex flex-row gap-4 py-7">
+            <div className="col-span-12 flex flex-row gap-4 py-7 sm:col-span-6 xl:col-span-5">
               <div>
                 <FaQuoteLeft className="text-4xl text-gray-500" />
               </div>
-              <div className="flex flex-col justify-between  gap-6">
+              <div className="flex flex-col justify-between gap-6">
                 <div>
-                  <p className="mb-5 line-clamp-6 font-lato text-lg">
+                  <p className="mb-5 font-lato text-lg sm:line-clamp-6">
                     {testimonial?.comment}
                   </p>
                   <StarRating rating={testimonial?.rating} />

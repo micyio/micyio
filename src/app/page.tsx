@@ -2,8 +2,10 @@ import {
   AboutSection,
   Clients,
   Hero,
+  MarqueeSection,
   PortfolioSection,
   ServiceSection,
+  TestimonialsSection,
 } from "@/features/home";
 
 export default function Home() {
@@ -14,9 +16,9 @@ export default function Home() {
       <AboutSection />
       <ServiceSection />
       <PortfolioSection />
-      {/* <MarqueeSection />
+      <MarqueeSection />
       <TestimonialsSection />
-      <TechnologySection />
+      {/*<TechnologySection />
       <FaqSection />
       <Pricing />
       <CTA /> */}
