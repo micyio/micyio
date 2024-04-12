@@ -1,12 +1,12 @@
-import { Clients, Hero } from "@/features/home";
+import { AboutSection, Clients, Hero } from "@/features/home";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-[100px] lg:gap-[200px]">
       <Hero />
       <Clients />
-      {/* <AboutSection />
-      <ServiceSection />
+      <AboutSection />
+      {/* <ServiceSection />
       <PortfolioSection />
       <MarqueeSection />
       <TestimonialsSection />

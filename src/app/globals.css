@@ -10,7 +10,7 @@ body {
   @apply font-sans text-4xl font-bold leading-10 sm:text-5xl sm:leading-[70px] lg:text-7xl lg:leading-[100px];
 }
 .heading-two {
-  @apply font-sans text-[56px] font-bold;
+  @apply font-sans text-4xl font-bold leading-[54px] lg:text-5xl lg:leading-[72px] xl:text-[56px] xl:leading-[84px];
 }
 .heading-three {
   @apply font-sans text-4xl font-bold;
