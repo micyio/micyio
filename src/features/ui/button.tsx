@@ -21,12 +21,12 @@ export function Button({
 
   if (variant === "primary") {
     buttonClass =
-      "h-12 rounded-[24px] bg-gradient-to-r from-primary to-deepOrange py-2 px-[20px] font-lato text-lg font-semibold text-white";
+      "h-10 xl:h-12 rounded-[24px] bg-gradient-to-r from-primary to-deepOrange py-2 px-[20px] font-lato text-sm xl:text-lg font-medium xl:font-semibold text-white";
   } else if (variant === "outline") {
     buttonClass =
-      "h-12 rounded-[24px] border border-primary px-[20px] py-2 font-lato text-lg font-semibold text-primary";
+      "h-10 xl:h-12 rounded-[24px] border border-primary px-[20px] py-2 font-lato text-sm xl:text-lg font-medium xl:font-semibold text-primary";
   } else if (variant === "dynamic") {
-    buttonClass = `h-12 rounded-[24px] py-2 px-[30px] font-lato text-lg font-semibold text-white hover:bg-gradient-to-r from-primary hover:text-white to-deepOrange ${isActive === true ? "bg-gradient-to-r from-primary to-deepOrange text-white border border-primary" : "border border-primary text-primary"}`;
+    buttonClass = `h-10 xl:h-12 rounded-[24px] py-2 px-[30px] font-lato text-sm xl:text-lg font-medium xl:font-semibold text-white hover:bg-gradient-to-r from-primary hover:text-white to-deepOrange ${isActive === true ? "bg-gradient-to-r from-primary to-deepOrange text-white border border-primary" : "border border-primary text-primary"}`;
   }
 
   return (

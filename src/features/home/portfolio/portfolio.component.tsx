@@ -9,13 +9,13 @@ export function PortfolioSection() {
   const [activeTab, setActiveTab] = useState<string>("all");
 
   const filteredSliderImages = sliderImage.filter((image) =>
-    activeTab === "all" ? true : image.category.includes(activeTab)
+    activeTab === "all" ? true : image?.category.includes(activeTab)
   );
 
   return (
     <div className="container" id="portfolio">
-      <div className="grid grid-cols-12 ">
-        <div className="col-span-8">
+      <div className="grid grid-cols-12">
+        <div className="col-span-12 lg:col-span-8">
           <h1 className="heading-two mb-5">
             Our <span className="text-primary">Portfolio</span>
           </h1>
@@ -31,7 +31,7 @@ export function PortfolioSection() {
       </div>
 
       <div className="mt-8">
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-2 lg:gap-4">
           {categoryList?.map((category, index) => (
             <Button
               key={index}
