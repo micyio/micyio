@@ -21,8 +21,8 @@ export function TestimonialSlider() {
       {testimonialData?.map((testimonial, index) => (
         <SwiperSlide key={index}>
           <div className="grid grid-cols-12 sm:gap-10">
-            <div className="col-span-12 xl:col-span-2" />
-            <div className="col-span-12 sm:col-span-6 xl:col-span-3">
+            <div className="col-span-12 sm:col-span-1 xl:col-span-2" />
+            <div className="col-span-12 sm:col-span-5 xl:col-span-3">
               <Image
                 src={testimonial?.thumbnail}
                 alt={testimonial?.author}

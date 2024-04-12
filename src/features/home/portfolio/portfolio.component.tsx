@@ -15,7 +15,7 @@ export function PortfolioSection() {
   return (
     <div className="container" id="portfolio">
       <div className="grid grid-cols-12">
-        <div className="col-span-12 lg:col-span-8">
+        <div className="col-span-12 text-center lg:col-span-8 lg:text-left">
           <h1 className="heading-two mb-5">
             Our <span className="text-primary">Portfolio</span>
           </h1>

@@ -5,6 +5,7 @@ import {
   MarqueeSection,
   PortfolioSection,
   ServiceSection,
+  TechnologySection,
   TestimonialsSection,
 } from "@/features/home";
 
@@ -18,8 +19,8 @@ export default function Home() {
       <PortfolioSection />
       <MarqueeSection />
       <TestimonialsSection />
-      {/*<TechnologySection />
-      <FaqSection />
+      <TechnologySection />
+      {/*<FaqSection />
       <Pricing />
       <CTA /> */}
     </main>
