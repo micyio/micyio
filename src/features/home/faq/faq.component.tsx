@@ -10,6 +10,7 @@ export function FaqSection() {
   const toggleAnswer = (index: number) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
   return (
     <div className="container">
       <div className="mx-auto mb-14 max-w-[925px] text-center">
@@ -30,12 +31,10 @@ export function FaqSection() {
         {faqData.map((faq, index) => (
           <div
             key={index}
-            className="rounded-3xl bg-[#FFFDEA] p-10 dark:bg-[#141313]"
+            className="rounded-3xl bg-[#FFFDEA] p-5 dark:bg-[#141313] md:p-10"
+            onClick={() => toggleAnswer(index)}
           >
-            <h3
-              className="flex cursor-pointer justify-between font-sans text-[28px] font-bold "
-              onClick={() => toggleAnswer(index)}
-            >
+            <h3 className="flex cursor-pointer justify-between font-sans text-lg font-bold md:text-[28px] ">
               {faq.question}
               {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
             </h3>

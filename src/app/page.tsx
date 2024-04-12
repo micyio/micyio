@@ -1,6 +1,7 @@
 import {
   AboutSection,
   Clients,
+  FaqSection,
   Hero,
   MarqueeSection,
   PortfolioSection,
@@ -20,8 +21,8 @@ export default function Home() {
       <MarqueeSection />
       <TestimonialsSection />
       <TechnologySection />
-      {/*<FaqSection />
-      <Pricing />
+      <FaqSection />
+      {/*<Pricing />
       <CTA /> */}
     </main>
   );
